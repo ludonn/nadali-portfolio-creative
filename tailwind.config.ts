@@ -56,7 +56,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['DM Sans', 'sans-serif'],
-				display: ['Space Grotesk', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
 				mono: ['monospace'],
 			},

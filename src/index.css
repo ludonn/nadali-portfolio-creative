@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 220 35% 98%;
+    --background: 230 35% 97%;
     --foreground: 225 40% 12%;
 
     --card: 0 0% 100%;
@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 225 40% 12%;
 
-    --primary: 250 85% 65%;
+    --primary: 262 83% 58%;
     --primary-foreground: 220 35% 98%;
 
-    --secondary: 190 80% 50%;
+    --secondary: 187 75% 55%;
     --secondary-foreground: 220 35% 98%;
 
     --muted: 220 35% 93%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 280 85% 65%;
+    --accent: 291 70% 60%;
     --accent-foreground: 220 35% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,7 +32,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 250 85% 65%;
+    --ring: 262 83% 58%;
 
     --radius: 0.5rem;
   }
@@ -47,16 +47,16 @@
     --popover: 225 40% 12%;
     --popover-foreground: 220 35% 12%;
 
-    --primary: 250 85% 65%;
+    --primary: 262 83% 58%;
     --primary-foreground: 225 40% 12%;
 
-    --secondary: 190 80% 50%;
+    --secondary: 187 75% 55%;
     --secondary-foreground: 225 40% 12%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 280 85% 65%;
+    --accent: 291 70% 60%;
     --accent-foreground: 225 40% 12%;
 
     --destructive: 0 62.8% 30.6%;
@@ -64,7 +64,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 250 85% 65%;
+    --ring: 262 83% 58%;
   }
 }
 
