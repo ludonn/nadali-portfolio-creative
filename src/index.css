@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
 
 @tailwind base;
@@ -7,65 +6,65 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 220 35% 98%;
+    --foreground: 225 40% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 225 40% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 225 40% 12%;
 
-    --primary: 222 89% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 250 85% 65%;
+    --primary-foreground: 220 35% 98%;
 
-    --secondary: 162 94% 40%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 190 80% 50%;
+    --secondary-foreground: 220 35% 98%;
 
-    --muted: 210 40% 93%;
+    --muted: 220 35% 93%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 349 89% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 280 85% 65%;
+    --accent-foreground: 220 35% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 220 35% 98%;
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 222 89% 60%;
+    --ring: 250 85% 65%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 225 40% 12%;
+    --foreground: 220 35% 98%;
 
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 225 40% 12%;
+    --card-foreground: 220 35% 98%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 225 40% 12%;
+    --popover-foreground: 220 35% 12%;
 
-    --primary: 222 89% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 250 85% 65%;
+    --primary-foreground: 225 40% 12%;
 
-    --secondary: 162 94% 40%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 190 80% 50%;
+    --secondary-foreground: 225 40% 12%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 349 89% 60%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 280 85% 65%;
+    --accent-foreground: 225 40% 12%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 220 35% 98%;
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 222 89% 60%;
+    --ring: 250 85% 65%;
   }
 }
 
@@ -162,7 +161,7 @@
 
 /* Decorative elements */
 .geometric-shape {
-  @apply absolute pointer-events-none opacity-75;
+  @apply absolute pointer-events-none opacity-75 transition-all duration-700;
 }
 
 .shape-circle {
@@ -186,7 +185,7 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-secondary;
 }
 
 .mask-radial-faded {
@@ -213,22 +212,22 @@
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 .animate-shimmer {
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   background-size: 200% 100%;
-  animation: shimmer 2s infinite;
+  animation: shimmer 2.5s infinite;
 }
 
 /* Interactive hover effects */
 .hover-lift {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
 }
 
 /* Text animations */
