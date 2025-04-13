@@ -101,18 +101,12 @@ const Hero = () => {
               <span>Project Manager</span>
             </div>
             
-            <h1 className="mb-6 text-5xl md:text-6xl lg:text-7xl font-display leading-tight w-full">
-              <span className="text-gradient relative font-bold">
-                Ludovica Nadali
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-500"></span>
-              </span>
+            <h1 className="mb-6 text-5xl md:text-6xl lg:text-7xl font-display leading-tight w-full flex flex-col items-center">
+              <span className="text-gradient font-bold">LUDOVICA</span>
+              <span className="text-gradient font-bold">NADALI</span>
             </h1>
             
-            <p className="text-lg md:text-xl mb-12 w-full text-muted-foreground hover:text-foreground transition-colors duration-300">
-              Project Manager
-            </p>
-            
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8">
               <a 
                 href="#about" 
                 className="btn btn-primary px-8 py-4 rounded-lg transition-all relative overflow-hidden"
