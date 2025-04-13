@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,65 +7,65 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 0 0% 10%;
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 24 35% 63%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 222 89% 60%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 200 20% 52%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 162 94% 40%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 0 0% 93%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 40% 93%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 24 35% 63%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 349 89% 60%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 24 35% 63%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 89% 60%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 0 0% 10%;
-    --foreground: 0 0% 98%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 24 35% 63%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 222 89% 60%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 200 20% 52%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 162 94% 40%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 24 35% 63%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 349 89% 60%;
+    --accent-foreground: 222 47% 11%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 24 35% 63%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 222 89% 60%;
   }
 }
 
@@ -79,11 +79,12 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-medium tracking-tight;
+    @apply font-display font-medium tracking-tight;
   }
 
   h1 {
@@ -131,11 +132,11 @@
   }
   
   .section-heading {
-    @apply text-3xl font-serif font-medium mb-8 relative inline-block;
+    @apply text-3xl font-display font-medium mb-8 relative inline-block;
   }
   
   .section-heading::after {
-    @apply content-[''] absolute h-[3px] w-1/2 bg-nadali-accent bottom-[-10px] left-0;
+    @apply content-[''] absolute h-[3px] w-1/2 bg-accent bottom-[-10px] left-0;
   }
 }
 
@@ -148,13 +149,46 @@
 }
 
 .experience-item::before {
-  @apply content-[''] absolute left-0 top-2 w-3 h-3 rounded-full bg-nadali-accent;
+  @apply content-[''] absolute left-0 top-2 w-3 h-3 rounded-full bg-accent;
 }
 
 .experience-item::after {
-  @apply content-[''] absolute left-[5.5px] top-5 w-[2px] h-[calc(100%-22px)] bg-nadali-accent/50;
+  @apply content-[''] absolute left-[5.5px] top-5 w-[2px] h-[calc(100%-22px)] bg-accent/50;
 }
 
 .experience-item:last-child::after {
   @apply hidden;
+}
+
+/* Decorative elements */
+.geometric-shape {
+  @apply absolute pointer-events-none opacity-75;
+}
+
+.shape-circle {
+  @apply rounded-full;
+}
+
+.shape-square {
+  @apply rounded-md;
+}
+
+.shape-1 {
+  @apply bg-gradient-to-r from-primary to-accent;
+}
+
+.shape-2 {
+  @apply bg-gradient-to-r from-secondary to-primary;
+}
+
+.shape-3 {
+  @apply bg-gradient-to-r from-accent to-secondary;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+}
+
+.mask-radial-faded {
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
 }

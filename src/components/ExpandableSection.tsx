@@ -23,12 +23,12 @@ const ExpandableSection = ({
       <Collapsible 
         open={isActive}
         onOpenChange={onToggle}
-        className="border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-nadali-accent/50"
+        className="border border-border/50 rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 bg-background/50 backdrop-blur-sm"
       >
         <CollapsibleTrigger className="flex w-full items-center justify-between p-6 text-left">
-          <h2 className="text-2xl md:text-3xl font-serif">{title}</h2>
+          <h2 className="text-2xl md:text-3xl font-display">{title}</h2>
           <ChevronDown 
-            className={cn("h-6 w-6 text-nadali-accent transition-transform duration-300", 
+            className={cn("h-6 w-6 text-primary transition-transform duration-300", 
               isActive && "rotate-180"
             )} 
           />

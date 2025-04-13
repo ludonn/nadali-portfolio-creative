@@ -15,21 +15,26 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 overflow-hidden relative">
-      {/* Background decorative elements */}
+      {/* Geometric decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[20%] right-[10%] w-64 h-64 rounded-full bg-gradient-to-br from-nadali-accent/10 to-nadali-blue/10 blur-3xl"></div>
-        <div className="absolute bottom-[30%] left-[5%] w-96 h-96 rounded-full bg-gradient-to-tr from-nadali-blue/10 to-nadali-accent/10 blur-3xl"></div>
+        <div className="geometric-shape shape-1 w-64 h-64 rounded-full top-[15%] right-[8%] blur-xl opacity-20 animate-spin-slow"></div>
+        <div className="geometric-shape shape-2 w-40 h-40 rounded-full bottom-[25%] left-[15%] blur-xl opacity-20 animate-float"></div>
+        <div className="geometric-shape shape-square shape-3 w-20 h-20 top-[35%] left-[20%] animate-pulse"></div>
+        <div className="geometric-shape shape-square shape-1 w-16 h-16 bottom-[20%] right-[25%] animate-pulse"></div>
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(120,120,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(120,120,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       </div>
       
-      <div className="container relative">
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="inline-block mb-6 px-4 py-1 rounded-full border border-nadali-accent/30 text-sm text-nadali-accent animate-pulse">
+            <div className="inline-block mb-6 px-4 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm text-primary animate-pulse">
               Innovation Manager & Project Manager
             </div>
             
-            <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl font-serif leading-tight">
-              Trasformo idee in <span className="text-gradient-to-r from-nadali-accent to-nadali-blue bg-clip-text text-transparent">progetti innovativi</span>
+            <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl font-display leading-tight">
+              Trasformo idee in <span className="text-gradient font-bold">progetti innovativi</span>
             </h1>
             
             <p className="text-lg md:text-xl mb-8 max-w-lg text-muted-foreground">
@@ -38,10 +43,10 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <a href="#about" className="btn btn-primary px-6 py-3 bg-nadali-accent hover:bg-nadali-accent/90 text-white rounded-lg transition-all">
+              <a href="#about" className="btn btn-primary px-6 py-3 rounded-lg transition-all">
                 Scopri di più
               </a>
-              <a href="#contact" className="btn btn-outline px-6 py-3 border border-border hover:border-nadali-accent rounded-lg transition-all">
+              <a href="#contact" className="btn btn-outline px-6 py-3 border border-border hover:border-primary rounded-lg transition-all">
                 Contattami
               </a>
             </div>
@@ -50,16 +55,17 @@ const Hero = () => {
           <div className={`relative flex justify-center transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
             {/* Animated decorative elements */}
             <div className="absolute -z-10 w-full h-full">
-              <div className="absolute top-1/4 -left-10 w-20 h-20 rounded-full border border-nadali-accent/20 animate-[spin_15s_linear_infinite]"></div>
-              <div className="absolute bottom-1/4 -right-5 w-16 h-16 rounded-full border border-nadali-blue/30 animate-[spin_10s_linear_infinite_reverse]"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full border-2 border-dashed border-nadali-accent/30 animate-[spin_20s_linear_infinite]"></div>
+              <div className="absolute top-1/3 -left-10 w-20 h-20 border-2 border-dashed border-primary/40 rounded-full animate-spin-slow"></div>
+              <div className="absolute bottom-1/3 -right-5 w-16 h-16 border-2 border-dashed border-secondary/40 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-2 border-dashed border-accent/30 rounded-full animate-spin-slow"></div>
             </div>
             
             {/* Main visual element */}
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-nadali-accent/30 to-nadali-blue/30 backdrop-blur-sm"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-6xl md:text-8xl font-serif font-light text-white mix-blend-overlay">LN</span>
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden mask-radial-faded">
+              <div className="absolute inset-0 bg-gradient-to-tl from-primary via-accent to-secondary opacity-80"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.3)_0,transparent_70%)]"></div>
+              <div className="absolute inset-0 flex items-center justify-center backdrop-blur-sm">
+                <span className="text-7xl md:text-8xl font-display font-bold text-white mix-blend-overlay">LN</span>
               </div>
             </div>
           </div>
@@ -68,10 +74,10 @@ const Hero = () => {
         <div className={`absolute bottom-12 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <a 
             href="#about" 
-            className="flex items-center justify-center w-10 h-10 rounded-full border border-border hover:border-nadali-accent transition-colors animate-bounce"
+            className="flex items-center justify-center w-12 h-12 rounded-full border border-border bg-background/50 backdrop-blur-sm hover:border-primary transition-colors animate-bounce"
             aria-label="Scopri di più"
           >
-            <ArrowDown size={20} />
+            <ArrowDown size={20} className="text-primary" />
           </a>
         </div>
       </div>
