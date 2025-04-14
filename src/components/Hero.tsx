@@ -117,22 +117,11 @@ const Hero = () => {
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group"
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
+                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group hover:bg-[#2C2A33] transform hover:-translate-y-1 hover:scale-[1.02] duration-300 ease-out"
               >
-                <span 
-                  className="relative z-10 transition-transform duration-300 group-hover:-translate-y-1" 
-                >
+                <span className="relative z-10 transition-transform duration-300 group-hover:text-nadali-accent">
                   Get to know me
                 </span>
-                <span 
-                  className="absolute inset-0 bg-[#1A1F2C] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{
-                    transform: `scale(${isHovering ? 1.08 : 1})`,
-                    transition: 'opacity 0.5s ease, transform 0.5s ease'
-                  }}
-                ></span>
               </a>
             </div>
           </div>
