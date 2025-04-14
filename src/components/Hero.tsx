@@ -1,3 +1,4 @@
+
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -117,9 +118,13 @@ const Hero = () => {
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group hover:bg-[#2C2A33] transform hover:-translate-y-1 hover:scale-[1.02] duration-300 ease-out"
+                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
+                  hover:bg-secondary/90 
+                  transform hover:-translate-y-1 hover:scale-[1.02] 
+                  duration-300 ease-out 
+                  hover:text-secondary-foreground"
               >
-                <span className="relative z-10 transition-transform duration-300 group-hover:text-nadali-accent">
+                <span className="relative z-10 transition-colors duration-300">
                   Get to know me
                 </span>
               </a>
