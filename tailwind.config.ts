@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -59,6 +58,7 @@ export default {
 				display: ['Montserrat', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
 				mono: ['monospace'],
+				impact: ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
