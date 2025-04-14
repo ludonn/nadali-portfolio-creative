@@ -69,7 +69,7 @@ const Hero = () => {
           {[...Array(30)].map((_, i) => (
             <div 
               key={i}
-              className="absolute w-2 h-2 rounded-full bg-primary/40 blur-sm"
+              className="absolute w-2 h-2 rounded-full bg-nadali-brown/40 blur-sm"
               style={{
                 top: `${Math.random() * 100}%`,
                 left: `${Math.random() * 100}%`,
@@ -94,7 +94,7 @@ const Hero = () => {
         <div
           className="absolute w-60 h-60 rounded-full opacity-20 blur-3xl mix-blend-screen"
           style={{
-            background: 'radial-gradient(circle, rgba(254, 186, 23, 0.6) 0%, rgba(254, 186, 23, 0) 70%)',
+            background: 'radial-gradient(circle, rgba(187, 216, 163, 0.6) 0%, rgba(187, 216, 163, 0) 70%)',
             left: `calc(${mousePosition.x * 100}% - 7.5rem)`,
             top: `calc(${mousePosition.y * 100}% - 7.5rem)`,
             transition: 'left 0.2s ease-out, top 0.2s ease-out'
@@ -105,24 +105,24 @@ const Hero = () => {
       <div className="container relative z-10">
         <div className="flex flex-col items-center justify-center text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="inline-flex items-center gap-2.5 mb-10 px-6 py-3 rounded-full border border-secondary/30 bg-secondary/5 text-lg text-secondary group hover:bg-secondary/10 transition-all cursor-default">
+            <div className="inline-flex items-center gap-2.5 mb-10 px-6 py-3 rounded-full border border-nadali-green/30 bg-nadali-green/5 text-lg text-nadali-green group hover:bg-nadali-green/10 transition-all cursor-default">
               <Sparkles className="w-6 h-6 animate-pulse" />
               <span className="font-medium">Project Manager & Researcher</span>
             </div>
             
             <h1 className="mb-12 flex flex-col items-center font-impact tracking-wider leading-tight">
-              <span className="text-8xl md:text-9xl lg:text-[10rem] text-primary font-black">LUDOVICA</span>
-              <span className="text-8xl md:text-9xl lg:text-[10rem] text-primary font-black">NADALI</span>
+              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-black">LUDOVICA</span>
+              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-black">NADALI</span>
             </h1>
             
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="bg-[#BF9264] text-[#F0F1C5] px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
-                  hover:bg-[#6F826A] 
+                className="bg-nadali-brown text-nadali-cream px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
+                  hover:bg-nadali-green 
                   transform hover:-translate-y-1 hover:scale-[1.02] 
                   duration-300 ease-out 
-                  hover:text-[#BBD8A3]"
+                  hover:text-nadali-lightGreen"
               >
                 <span className="relative z-10 transition-colors duration-300">
                   Get to know me
@@ -134,7 +134,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
-        <ArrowDown className="w-8 h-8 text-secondary" />
+        <ArrowDown className="w-8 h-8 text-nadali-green" />
       </div>
     </section>
   );

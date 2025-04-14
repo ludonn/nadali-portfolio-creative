@@ -51,7 +51,14 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				}
+				},
+				nadali: {
+					brown: '#BF9264',
+					green: '#6F826A',
+					lightGreen: '#BBD8A3',
+					cream: '#F0F1C5',
+					accent: '#BF9264',
+				},
 			},
 			fontFamily: {
 				sans: ['DM Sans', 'sans-serif'],

@@ -6,65 +6,65 @@
 
 @layer base {
   :root {
-    --background: 26 100% 97%;
-    --foreground: 26 80% 15%;
+    --background: 48 51% 94%;    /* #F0F1C5 - cream */
+    --foreground: 36 35% 57%;    /* #BF9264 - brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 26 80% 15%;
+    --card: 48 51% 94%;          /* #F0F1C5 - cream */
+    --card-foreground: 36 35% 57%; /* #BF9264 - brown */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 26 80% 15%;
+    --popover: 48 51% 94%;       /* #F0F1C5 - cream */
+    --popover-foreground: 36 35% 57%; /* #BF9264 - brown */
 
-    --primary: 39 99% 53%;
-    --primary-foreground: 26 100% 15%;
+    --primary: 36 35% 57%;       /* #BF9264 - brown */
+    --primary-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --secondary: 1 83% 40%;
-    --secondary-foreground: 26 100% 97%;
+    --secondary: 108 11% 46%;    /* #6F826A - olive green */
+    --secondary-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --muted: 30 41% 93%;
-    --muted-foreground: 26 33% 27%;
+    --muted: 82 40% 74%;         /* #BBD8A3 - light green */
+    --muted-foreground: 108 11% 46%; /* #6F826A - olive green */
 
-    --accent: 17 100% 15%;
-    --accent-foreground: 26 100% 97%;
+    --accent: 36 35% 57%;        /* #BF9264 - brown */
+    --accent-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 26 100% 97%;
+    --destructive-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --border: 26 33% 80%;
-    --input: 26 33% 80%;
-    --ring: 39 99% 53%;
+    --border: 36 35% 57%;        /* #BF9264 - brown, slightly transparent */
+    --input: 36 35% 57%;         /* #BF9264 - brown */
+    --ring: 36 35% 57%;          /* #BF9264 - brown */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 26 100% 15%;
-    --foreground: 26 100% 97%;
+    --background: 108 11% 46%;    /* #6F826A - olive green */
+    --foreground: 48 51% 94%;     /* #F0F1C5 - cream */
 
-    --card: 26 100% 15%;
-    --card-foreground: 26 100% 97%;
+    --card: 108 11% 46%;          /* #6F826A - olive green */
+    --card-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --popover: 26 100% 15%;
-    --popover-foreground: 26 100% 97%;
+    --popover: 108 11% 46%;       /* #6F826A - olive green */
+    --popover-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --primary: 39 99% 53%;
-    --primary-foreground: 26 100% 15%;
+    --primary: 36 35% 57%;        /* #BF9264 - brown */
+    --primary-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --secondary: 1 83% 40%;
-    --secondary-foreground: 26 100% 97%;
+    --secondary: 82 40% 74%;      /* #BBD8A3 - light green */
+    --secondary-foreground: 36 35% 57%; /* #BF9264 - brown */
 
-    --muted: 26 33% 20%;
-    --muted-foreground: 30 41% 83%;
+    --muted: 108 11% 36%;         /* Darker variation of #6F826A */
+    --muted-foreground: 82 40% 74%; /* #BBD8A3 - light green */
 
-    --accent: 17 100% 15%;
-    --accent-foreground: 26 100% 97%;
+    --accent: 36 35% 57%;         /* #BF9264 - brown */
+    --accent-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 26 100% 97%;
+    --destructive-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --border: 26 33% 27%;
-    --input: 26 33% 27%;
-    --ring: 39 99% 53%;
+    --border: 108 11% 56%;        /* Lighter variation of #6F826A */
+    --input: 108 11% 56%;         /* Lighter variation of #6F826A */
+    --ring: 36 35% 57%;           /* #BF9264 - brown */
   }
 }
 
@@ -173,19 +173,19 @@
 }
 
 .shape-1 {
-  @apply bg-gradient-to-r from-[#FEBA17] to-[#4E1F00];
+  @apply bg-gradient-to-r from-nadali-brown to-nadali-green;
 }
 
 .shape-2 {
-  @apply bg-gradient-to-r from-[#74512D] to-[#FEBA17];
+  @apply bg-gradient-to-r from-nadali-green to-nadali-lightGreen;
 }
 
 .shape-3 {
-  @apply bg-gradient-to-r from-[#4E1F00] to-[#74512D];
+  @apply bg-gradient-to-r from-nadali-lightGreen to-nadali-cream;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-primary via-accent to-secondary;
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-nadali-brown via-nadali-green to-nadali-lightGreen;
 }
 
 .mask-radial-faded {
