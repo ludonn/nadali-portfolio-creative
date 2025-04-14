@@ -118,11 +118,11 @@ const Hero = () => {
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
-                  hover:bg-secondary/90 
+                className="bg-[#BF9264] text-[#F0F1C5] px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
+                  hover:bg-[#6F826A] 
                   transform hover:-translate-y-1 hover:scale-[1.02] 
                   duration-300 ease-out 
-                  hover:text-secondary-foreground"
+                  hover:text-[#BBD8A3]"
               >
                 <span className="relative z-10 transition-colors duration-300">
                   Get to know me
