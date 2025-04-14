@@ -1,4 +1,3 @@
-
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -29,7 +28,6 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 overflow-hidden relative">
-      {/* Geometric decorative elements - now with more dynamic animations based on mouse movement */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div 
           className="geometric-shape shape-1 w-80 h-80 rounded-full blur-3xl opacity-40 animate-float"
@@ -66,7 +64,6 @@ const Hero = () => {
           }}
         ></div>
         
-        {/* More fluid particle effect with improved mouse tracking */}
         <div className="particles-container absolute inset-0">
           {[...Array(30)].map((_, i) => (
             <div 
@@ -85,7 +82,6 @@ const Hero = () => {
           ))}
         </div>
         
-        {/* More dynamic grid pattern with enhanced parallax effect */}
         <div 
           className="absolute inset-0 bg-[linear-gradient(rgba(116,81,45,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(116,81,45,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]"
           style={{ 
@@ -94,7 +90,6 @@ const Hero = () => {
           }}
         ></div>
         
-        {/* Additional dynamic elements that follow mouse more fluidly */}
         <div
           className="absolute w-60 h-60 rounded-full opacity-20 blur-3xl mix-blend-screen"
           style={{
@@ -122,21 +117,18 @@ const Hero = () => {
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="bg-secondary text-secondary-foreground px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden"
+                className="bg-[#221F26] text-white px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
               >
-                <span className="relative z-10 transition-transform duration-300" 
-                  style={{
-                    transform: isHovering ? 'translateY(-3px)' : 'translateY(0)',
-                  }}
+                <span 
+                  className="relative z-10 transition-transform duration-300 group-hover:-translate-y-1" 
                 >
-                  Get to know me!
+                  Get to know me
                 </span>
                 <span 
-                  className="absolute inset-0 bg-secondary/70 opacity-0 transition-opacity duration-500"
+                  className="absolute inset-0 bg-[#1A1F2C] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
-                    opacity: isHovering ? 1 : 0,
                     transform: `scale(${isHovering ? 1.08 : 1})`,
                     transition: 'opacity 0.5s ease, transform 0.5s ease'
                   }}
@@ -147,7 +139,6 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* More fluid animated scroll indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
         <ArrowDown className="w-8 h-8 text-secondary" />
       </div>
