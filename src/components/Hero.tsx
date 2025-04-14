@@ -111,7 +111,7 @@ const Hero = () => {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="inline-flex items-center gap-2.5 mb-10 px-6 py-3 rounded-full border border-secondary/30 bg-secondary/5 text-lg text-secondary group hover:bg-secondary/10 transition-all cursor-default">
               <Sparkles className="w-6 h-6 animate-pulse" />
-              <span className="font-medium">Project Manager</span>
+              <span className="font-medium">Project Manager & Researcher</span>
             </div>
             
             <h1 className="mb-12 flex flex-col items-center font-impact tracking-wider leading-tight">
@@ -122,7 +122,7 @@ const Hero = () => {
             <div className="flex justify-center mt-12">
               <a 
                 href="#about" 
-                className="btn btn-primary px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden"
+                className="bg-secondary text-secondary-foreground px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
               >
@@ -131,10 +131,10 @@ const Hero = () => {
                     transform: isHovering ? 'translateY(-3px)' : 'translateY(0)',
                   }}
                 >
-                  Scopri di più
+                  Get to know me!
                 </span>
                 <span 
-                  className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 transition-opacity duration-500"
+                  className="absolute inset-0 bg-secondary/70 opacity-0 transition-opacity duration-500"
                   style={{
                     opacity: isHovering ? 1 : 0,
                     transform: `scale(${isHovering ? 1.08 : 1})`,
