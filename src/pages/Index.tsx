@@ -1,12 +1,14 @@
 
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import ExpandableSection from "@/components/ExpandableSection";
-import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import InterestsSection from "@/components/InterestsSection";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
+
+const AboutSection = lazy(() => import("@/components/AboutSection"));
+const ProjectsSection = lazy(() => import("@/components/ProjectsSection"));
+const InterestsSection = lazy(() => import("@/components/InterestsSection"));
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -24,7 +26,9 @@ const Index = () => {
             isActive={activeSection === "about"}
             onToggle={() => setActiveSection(activeSection === "about" ? null : "about")}
           >
-            <AboutSection />
+            <Suspense fallback={<LoadingSpinner className="py-12" />}>
+              <AboutSection />
+            </Suspense>
           </ExpandableSection>
           
           <ExpandableSection 
@@ -33,7 +37,9 @@ const Index = () => {
             isActive={activeSection === "projects"}
             onToggle={() => setActiveSection(activeSection === "projects" ? null : "projects")}
           >
-            <ProjectsSection />
+            <Suspense fallback={<LoadingSpinner className="py-12" />}>
+              <ProjectsSection />
+            </Suspense>
           </ExpandableSection>
           
           <ExpandableSection 
@@ -42,7 +48,9 @@ const Index = () => {
             isActive={activeSection === "interests"}
             onToggle={() => setActiveSection(activeSection === "interests" ? null : "interests")}
           >
-            <InterestsSection />
+            <Suspense fallback={<LoadingSpinner className="py-12" />}>
+              <InterestsSection />
+            </Suspense>
           </ExpandableSection>
         </div>
       </div>
