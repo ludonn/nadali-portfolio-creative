@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,11 +54,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				nadali: {
-					brown: '#BF9264',
+					brown: '#775C3F',
 					green: '#6F826A',
 					lightGreen: '#BBD8A3',
 					cream: '#F0F1C5',
-					accent: '#BF9264',
+					darkBlue: '#0D1821',
+					accent: '#775C3F',
 				},
 			},
 			fontFamily: {

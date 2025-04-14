@@ -84,7 +84,7 @@ const Hero = () => {
         </div>
         
         <div 
-          className="absolute inset-0 bg-[linear-gradient(rgba(116,81,45,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(116,81,45,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]"
+          className="absolute inset-0 bg-[linear-gradient(rgba(119,92,63,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(119,92,63,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]"
           style={{ 
             transform: `translate(${mousePosition.x * -50}px, ${mousePosition.y * -50}px)`,
             transition: 'transform 0.3s ease-out'
@@ -120,9 +120,9 @@ const Hero = () => {
                 href="#about" 
                 className="bg-nadali-brown text-nadali-cream px-12 py-6 text-xl rounded-lg transition-all relative overflow-hidden group 
                   hover:bg-nadali-green 
+                  hover:text-nadali-lightGreen
                   transform hover:-translate-y-1 hover:scale-[1.02] 
-                  duration-300 ease-out 
-                  hover:text-nadali-lightGreen"
+                  duration-300 ease-out"
               >
                 <span className="relative z-10 transition-colors duration-300">
                   Get to know me
