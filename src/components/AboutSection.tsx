@@ -26,8 +26,8 @@ const AboutSection = () => {
           </p>
           
           <Link to="/about">
-            <Button className="mt-4 group">
-              Scopri di più su di me
+            <Button className="mt-4 group bg-nadali-cream text-nadali-blue hover:bg-nadali-blue hover:text-nadali-cream">
+              More
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Button>
           </Link>

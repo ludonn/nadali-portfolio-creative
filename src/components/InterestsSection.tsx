@@ -52,8 +52,8 @@ const InterestsSection = () => {
             className="p-4 border border-border/50 rounded-lg hover:border-nadali-accent/50 transition-all duration-300"
           >
             <div className="flex items-center mb-3">
-              <div className="mr-3 bg-muted p-2 rounded-md">
-                <interest.icon className="h-5 w-5 text-nadali-accent" />
+              <div className="mr-3 bg-nadali-blue p-2 rounded-md">
+                <interest.icon className="h-5 w-5 text-nadali-cream" />
               </div>
               <h3 className="font-serif text-lg">{interest.title}</h3>
             </div>

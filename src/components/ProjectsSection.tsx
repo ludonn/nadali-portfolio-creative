@@ -43,7 +43,7 @@ const ProjectsSection = () => {
                     {project.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground"
+                        className="text-xs px-2 py-1 rounded-full bg-nadali-blue text-nadali-cream"
                       >
                         {tag}
                       </span>
@@ -62,8 +62,8 @@ const ProjectsSection = () => {
       
       <div className="flex justify-center mt-8">
         <Link to="/projects">
-          <Button variant="outline" className="group">
-            Visualizza tutti i progetti
+          <Button variant="outline" className="group hover:bg-nadali-blue hover:text-nadali-cream">
+            All projects
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
           </Button>
         </Link>

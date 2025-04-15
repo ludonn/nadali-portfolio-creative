@@ -22,7 +22,7 @@ const Index = () => {
         <div className="grid gap-8">
           <ExpandableSection 
             id="about"
-            title="Chi Sono"
+            title="About"
             isActive={activeSection === "about"}
             onToggle={() => setActiveSection(activeSection === "about" ? null : "about")}
           >
@@ -33,7 +33,7 @@ const Index = () => {
           
           <ExpandableSection 
             id="projects"
-            title="Progetti"
+            title="Projects"
             isActive={activeSection === "projects"}
             onToggle={() => setActiveSection(activeSection === "projects" ? null : "projects")}
           >
@@ -44,7 +44,7 @@ const Index = () => {
           
           <ExpandableSection 
             id="interests"
-            title="Interessi"
+            title="What I'm interested in"
             isActive={activeSection === "interests"}
             onToggle={() => setActiveSection(activeSection === "interests" ? null : "interests")}
           >
