@@ -43,7 +43,7 @@ const ExpandableSection = ({
           id={`${id}-content`}
           className="animate-slide-up overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
         >
-          <div className="p-6 pt-0 border-t border-border/50">
+          <div className="p-6 pt-0">
             {children}
           </div>
         </CollapsibleContent>

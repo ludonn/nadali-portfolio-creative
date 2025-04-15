@@ -59,15 +59,6 @@ const ProjectsSection = () => {
           <CarouselNext className="position-relative static" />
         </div>
       </Carousel>
-      
-      <div className="flex justify-center mt-8">
-        <Link to="/projects">
-          <Button variant="outline" className="group hover:bg-nadali-blue hover:text-nadali-cream">
-            All projects
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-          </Button>
-        </Link>
-      </div>
     </div>
   );
 };
