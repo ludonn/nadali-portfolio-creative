@@ -23,6 +23,10 @@ const Navbar = () => {
           className="text-xl font-serif font-medium relative group"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+          }}
         >
           <span className="block transition-transform duration-500 ease-out" style={{
             transform: hovered ? 'translateY(-100%)' : 'translateY(0)',

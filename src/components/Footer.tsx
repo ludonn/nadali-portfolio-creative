@@ -7,12 +7,11 @@ const Footer = () => {
   return (
     <footer id="contact" className="py-12 border-t border-border/40 bg-gradient-to-b from-transparent to-muted/30">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-display font-medium mb-4">Ludovica Nadali</h3>
             <p className="text-muted-foreground">
-              Innovation Manager & Project Manager specializzata nella gestione di progetti 
-              di innovazione e ricerca.
+              If I'm not working or learning, I'm definitely drinking a spritz.
             </p>
           </div>
           
@@ -31,22 +30,6 @@ const Footer = () => {
                   linkedin.com/in/ludovicanadali
                 </a>
               </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-display mb-4">Collegamenti Rapidi</h4>
-            <ul className="space-y-2">
-              {['Chi Sono', 'Progetti', 'Interessi', 'Contatti'].map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={`#${item.toLowerCase().replace(' ', '-')}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
             </ul>
           </div>
         </div>
