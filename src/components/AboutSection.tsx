@@ -2,6 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   return (
@@ -24,10 +25,12 @@ const AboutSection = () => {
             poiché credo che il progresso nasca da soluzioni costruite intorno ai bisogni umani.
           </p>
           
-          <Button className="mt-4 group">
-            Scopri di più su di me
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-          </Button>
+          <Link to="/about">
+            <Button className="mt-4 group">
+              Scopri di più su di me
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+            </Button>
+          </Link>
         </div>
         
         <div className="space-y-6">

@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
   const projects = [
@@ -60,10 +61,12 @@ const ProjectsSection = () => {
       </Carousel>
       
       <div className="flex justify-center mt-8">
-        <Button variant="outline" className="group">
-          Visualizza tutti i progetti
-          <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-        </Button>
+        <Link to="/projects">
+          <Button variant="outline" className="group">
+            Visualizza tutti i progetti
+            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+          </Button>
+        </Link>
       </div>
     </div>
   );
