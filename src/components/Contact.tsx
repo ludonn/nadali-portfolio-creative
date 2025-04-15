@@ -39,11 +39,8 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
           <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-xl font-medium mb-6">Parliamo del tuo progetto</h3>
-            <p className="mb-8">
-              Hai un progetto innovativo in mente o vuoi collaborare? 
-              Compila il modulo o contattami direttamente tramite email o LinkedIn.
-            </p>
+            
+           
             
             <div className="space-y-4 mb-8">
               <a 
@@ -64,10 +61,7 @@ const Contact = () => {
                 <span>linkedin.com/in/ludovicanadali/</span>
               </a>
               
-              <div className="flex items-start">
-                <MapPin className="mr-3 mt-1" size={20} />
-                <span>Via Pietro Ceoldo 11, 35128 (PD), Italy</span>
-              </div>
+              
             </div>
           </div>
           
