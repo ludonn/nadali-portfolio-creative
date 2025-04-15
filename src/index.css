@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 48 51% 94%;    /* #F0F1C5 - cream */
-    --foreground: 33 30% 37%;    /* #775c3f - new brown */
+    --background: 40 30% 92%;    /* #f1ebe4 - cream */
+    --foreground: 201 53% 34%;   /* #27667b - blue */
 
-    --card: 48 51% 94%;          /* #F0F1C5 - cream */
-    --card-foreground: 33 30% 37%; /* #775c3f - new brown */
+    --card: 40 30% 92%;          /* #f1ebe4 - cream */
+    --card-foreground: 201 53% 34%; /* #27667b - blue */
 
-    --popover: 48 51% 94%;       /* #F0F1C5 - cream */
-    --popover-foreground: 33 30% 37%; /* #775c3f - new brown */
+    --popover: 40 30% 92%;       /* #f1ebe4 - cream */
+    --popover-foreground: 201 53% 34%; /* #27667b - blue */
 
-    --primary: 33 30% 37%;       /* #775c3f - new brown */
-    --primary-foreground: 48 51% 94%; /* #F0F1C5 - cream */
+    --primary: 201 53% 34%;      /* #27667b - blue */
+    --primary-foreground: 80 55% 80%; /* #ddeb9d - light */
 
-    --secondary: 108 11% 46%;    /* #6F826A - olive green */
-    --secondary-foreground: 48 51% 94%; /* #F0F1C5 - cream */
+    --secondary: 100 33% 66%;    /* #a0c878 - green */
+    --secondary-foreground: 80 55% 80%; /* #ddeb9d - light */
 
-    --muted: 82 40% 74%;         /* #BBD8A3 - light green */
-    --muted-foreground: 108 11% 46%; /* #6F826A - olive green */
+    --muted: 40 30% 92%;         /* #f1ebe4 - cream */
+    --muted-foreground: 201 53% 34%; /* #27667b - blue */
 
-    --accent: 33 30% 37%;        /* #775c3f - new brown */
-    --accent-foreground: 48 51% 94%; /* #F0F1C5 - cream */
+    --accent: 201 53% 34%;       /* #27667b - blue */
+    --accent-foreground: 80 55% 80%; /* #ddeb9d - light */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 48 51% 94%; /* #F0F1C5 - cream */
 
-    --border: 33 30% 37%;        /* #775c3f - new brown, slightly transparent */
-    --input: 33 30% 37%;         /* #775c3f - new brown */
-    --ring: 33 30% 37%;          /* #775c3f - new brown */
+    --border: 201 53% 34%;       /* #27667b - blue */
+    --input: 201 53% 34%;        /* #27667b - blue */
+    --ring: 201 53% 34%;         /* #27667b - blue */
 
     --radius: 0.5rem;
   }
@@ -143,19 +143,19 @@
 }
 
 .shape-1 {
-  @apply bg-gradient-to-r from-nadali-brown to-nadali-green;
+  @apply bg-gradient-to-r from-nadali-blue to-nadali-green;
 }
 
 .shape-2 {
-  @apply bg-gradient-to-r from-nadali-green to-nadali-lightGreen;
+  @apply bg-gradient-to-r from-nadali-green to-nadali-light;
 }
 
 .shape-3 {
-  @apply bg-gradient-to-r from-nadali-lightGreen to-nadali-cream;
+  @apply bg-gradient-to-r from-nadali-light to-nadali-cream;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-nadali-brown via-nadali-green to-nadali-lightGreen;
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-nadali-blue via-nadali-green to-nadali-light;
 }
 
 .mask-radial-faded {
