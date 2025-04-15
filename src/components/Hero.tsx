@@ -31,57 +31,31 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center pt-20 overflow-hidden relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div 
-          className="geometric-shape shape-1 w-80 h-80 rounded-full blur-3xl opacity-40 animate-float"
+          className="geometric-shape shape-1 w-80 h-80 rounded-full blur-3xl opacity-60 animate-float"
           style={{ 
-            top: `${10 + mousePosition.y * 25}%`, 
-            right: `${5 + mousePosition.x * 25}%`,
-            transition: 'top 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), right 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            top: `${10 + mousePosition.y * 40}%`,
+            right: `${5 + mousePosition.x * 40}%`,
+            transition: 'top 0.5s ease-out, right 0.5s ease-out'
           }}
         ></div>
         <div 
-          className="geometric-shape shape-2 w-64 h-64 rounded-full blur-3xl opacity-40 animate-float"
+          className="geometric-shape shape-2 w-64 h-64 rounded-full blur-3xl opacity-60 animate-float"
           style={{ 
-            bottom: `${20 - mousePosition.y * 25}%`, 
-            left: `${10 + mousePosition.x * 25}%`,
-            transition: 'bottom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), left 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            bottom: `${20 - mousePosition.y * 30}%`,
+            left: `${10 + mousePosition.x * 30}%`,
+            transition: 'bottom 0.5s ease-out, left 0.5s ease-out'
           }}
         ></div>
         <div 
-          className="geometric-shape shape-square shape-3 w-32 h-32 blur-3xl opacity-40 animate-pulse"
+          className="geometric-shape shape-square shape-3 w-40 h-40 blur-3xl opacity-50"
           style={{ 
-            top: `${30 + (mousePosition.y - 0.5) * 30}%`, 
-            left: `${15 + (mousePosition.x - 0.5) * 30}%`,
-            transform: `rotate(${mousePosition.x * 90}deg)`,
-            transition: 'top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
-          }}
-        ></div>
-        <div 
-          className="geometric-shape shape-square shape-1 w-28 h-28 blur-3xl opacity-40 animate-pulse"
-          style={{ 
-            bottom: `${15 - (mousePosition.y - 0.5) * 30}%`, 
-            right: `${20 - (mousePosition.x - 0.5) * 30}%`,
-            transform: `rotate(${-mousePosition.x * 90}deg)`,
-            transition: 'bottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), right 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            top: `${30 + (mousePosition.y - 0.5) * 20}%`,
+            left: `${15 + (mousePosition.x - 0.5) * 20}%`,
+            transform: `rotate(${mousePosition.x * 45}deg)`,
+            transition: 'all 0.5s ease-out'
           }}
         ></div>
         
-        <div className="particles-container absolute inset-0">
-          {[...Array(30)].map((_, i) => (
-            <div 
-              key={i}
-              className="absolute w-2 h-2 rounded-full bg-nadali-brown/40 blur-sm"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                opacity: 0.6 + Math.random() * 0.4,
-                transform: `translate(${(mousePosition.x - 0.5) * 60 * (Math.random() - 0.5)}px, ${(mousePosition.y - 0.5) * 60 * (Math.random() - 0.5)}px)`,
-                transition: 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                animation: `float ${5 + Math.random() * 7}s ease-in-out infinite`,
-                animationDelay: `${Math.random() * 5}s`
-              }}
-            ></div>
-          ))}
-        </div>
         
         <div 
           className="absolute inset-0 bg-[linear-gradient(rgba(116,81,45,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(116,81,45,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]"
@@ -110,9 +84,9 @@ const Hero = () => {
               <span className="font-medium">Project Manager & Researcher</span>
             </div>
             
-            <h1 className="mb-12 flex flex-col items-center font-impact tracking-wider leading-tight">
-              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-black">LUDOVICA</span>
-              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-black">NADALI</span>
+            <h1 className="mb-12 flex flex-col items-center">
+              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-serif font-bold tracking-tight">LUDOVICA</span>
+              <span className="text-8xl md:text-9xl lg:text-[10rem] text-nadali-brown font-serif font-bold tracking-tight">NADALI</span>
             </h1>
             
             <div className="flex justify-center mt-12">
