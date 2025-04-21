@@ -7,13 +7,13 @@
 
 @layer base {
   :root {
-    --background: 220 72% 97%;   /* #f0f1f9 - light blue */
+    --background: 220 72% 95%;   /* #f8f5f2 - off-white */
     --foreground: 201 53% 34%;   /* #27667b - blue */
 
-    --card: 220 72% 97%;         /* #f0f1f9 - light blue */
+    --card: 220 72% 95%;         /* #f8f5f2 - off-white */
     --card-foreground: 201 53% 34%; /* #27667b - blue */
 
-    --popover: 220 72% 97%;      /* #f0f1f9 - light blue */
+    --popover: 220 72% 95%;      /* #f8f5f2 - off-white */
     --popover-foreground: 201 53% 34%; /* #27667b - blue */
 
     --primary: 201 53% 34%;      /* #27667b - blue */
@@ -22,7 +22,7 @@
     --secondary: 100 33% 66%;    /* #a0c878 - green */
     --secondary-foreground: 346 24% 97%; /* #f8f5f2 - new off-white foreground */
 
-    --muted: 220 72% 97%;        /* #f0f1f9 - light blue */
+    --muted: 220 72% 95%;        /* #f8f5f2 - off-white */
     --muted-foreground: 201 53% 34%; /* #27667b - blue */
 
     --accent: 201 53% 34%;       /* #27667b - blue */
