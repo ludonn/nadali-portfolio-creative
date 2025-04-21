@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -16,10 +17,10 @@
     --popover-foreground: 201 53% 34%; /* #27667b - blue */
 
     --primary: 201 53% 34%;      /* #27667b - blue */
-    --primary-foreground: 220 72% 90%; /* #e8eaef - adjusted light blue foreground */
+    --primary-foreground: 346 24% 97%; /* #f8f5f2 - new off-white foreground */
 
     --secondary: 100 33% 66%;    /* #a0c878 - green */
-    --secondary-foreground: 220 72% 90%; /* #e8eaef - adjusted light blue foreground */
+    --secondary-foreground: 346 24% 97%; /* #f8f5f2 - new off-white foreground */
 
     --muted: 220 72% 97%;        /* #f0f1f9 - light blue */
     --muted-foreground: 201 53% 34%; /* #27667b - blue */
@@ -236,3 +237,4 @@
   border-radius: 50%;
   pointer-events: none;
 }
+
